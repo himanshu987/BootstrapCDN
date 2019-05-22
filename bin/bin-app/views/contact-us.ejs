@@ -1,0 +1,32 @@
+<% include _layouts/header %>
+
+  <div class="text-center m-5 font-weight-bold">
+      Send us A Message
+  </div>
+<form method="post" action="/contact">
+    <div class="form-group">
+        <label class="font-weight-bold" for="">Full Name</label>
+        <input type="text" class="form-control" name="username" value="" placeholder="Enter Your Full Name">
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" for="">Email</label>
+        <input type="email" class="form-control" name="email" value="" placeholder="Enter Your Email">
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" for="phone">Phone No:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter Your Phone Number" required>
+    </div>
+    <div class="form-group">
+        <label class="font-weight-bold" for="">Content</label>
+        <textarea name="content" class="form-control" id="ta" cols="30" rows="10" placeholder="Content"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="col-md-4 center-block">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">Send</button>
+      </div>
+    </div>
+
+    <!-- <button class="btn btn-primary float-none">Send</button> -->
+</form>
+
+<% include _layouts/footer %>
